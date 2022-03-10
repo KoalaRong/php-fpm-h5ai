@@ -1,8 +1,5 @@
 FROM php:fpm-alpine
 
-ARG HTTP_PROXY="http://192.168.240.1:7890"
-ARG HTTPS_PROXY="http://192.168.240.1:7890"
-
 RUN set -e &&\
     curl -sSLf \
         -o /usr/local/bin/install-php-extensions \
